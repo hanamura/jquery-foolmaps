@@ -1,0 +1,27 @@
+<doctype html>
+<html>
+  <head>
+    <style>
+      #map {
+        background-size: 500px 500px;
+        height: 500px;
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="map"
+      data-type="static"
+      data-query="Tokyo Station"
+      data-zoom="17"
+      data-lang="en"></div>
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="../jquery.foolmaps.js"></script>
+    <script>
+      $(function() {
+        $('#map').foolmaps();
+      });
+    </script>
+  </body>
+</html>
